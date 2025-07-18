@@ -1,0 +1,7 @@
+# This is just a place holder to keep IPs private
+
+
+[labservers]
+
+# 24 core machine
+fish ansible_host=<PRIVATE_IP> ansible_user=<YOUR_USERNAME>
