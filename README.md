@@ -1,6 +1,6 @@
 # Linux Lab
 
-This is my personal Linux homelab built for learning and showcasing skills in:
+An overview of my homelab, which I'm building to showcase the following:
 
 - Linux system administration (RHEL-based)
 - Configuration management with Ansible
@@ -11,20 +11,19 @@ This is my personal Linux homelab built for learning and showcasing skills in:
 
 ## Lab Overview
 
-This lab is deployed across two physical machines:
+This lab is deployed across two physical machines and two labs (homelab & worklab):
 
 ### Machine 1: 6-core, 64 GB RAM
 
-- Ansible control node
-- DNS server
-- Logging & monitoring stack
-- Git repository management
+- ansible-control: Infrastructure as Code with Ansible (provisions all VMs)
+- podman-dev: Podman container testing & development
+- k8s-worker-1: Kubernetes worker node
 
 ### Machine 2: 8-core, 32 GB RAM
 
-- Podman container host
-- Kubernetes worker node (future)
-- Web server & test workloads
+- k8s-master: Kubernetes control plane
+- k8s-worker-2: Kubernetes worker node
+- monitoring: Prometheus & Grafana (cluster metrics)
 
 ## Directory Structure
 
@@ -47,8 +46,8 @@ linux-lab/
 - Git + GitHub
 
 ## Later Versions Will Include
-systemd
-Nextcloud, Apache, Packer
+- systemd
+- Nextcloud, Apache, Packer
 
 ## Goals
 
